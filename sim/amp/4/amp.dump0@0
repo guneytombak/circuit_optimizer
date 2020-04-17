@@ -1,0 +1,23 @@
+* "simulator" "HSPICERF"
+* "version" "A-2008.03"
+* "format" "HSP"
+* "rundate" "19:10:07  04/15/2020"
+* "netlist" "../sim/amp/4/amp.sp"
+* "runtitle" "**aaaa"
+* time = 0
+* temperature = 25
+* alter = 0
+*** BEGIN: Saved Operating Point ***
+.nodeset
++ 0 = 0
++ eng = 0.596981
++ 1 = 1.2
++ 2 = 0.778191
++ 3 = 0.936522
++ 4 = 0.6
++ 5 = 0.596981
++ 6 = 0.392653
++ 7 = 0.596981
++ 8 = 0
++ 1000 = 2.17807e-010
+*** END: Saved Operating Point ***

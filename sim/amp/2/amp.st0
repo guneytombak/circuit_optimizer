@@ -1,0 +1,49 @@
+Parsing                                                                        
+                                                                               
+Loading Netlist Data                                                           
+Initialize Models                                                              
+
+Warning: (../sim/amp/2/amp.sp : 16) capacitor "CX" has too big value C=1000,
+this may cause instability or singularity in simulation, please verify your
+netlist
+Checking                                                                       
+                                                                               
+Compressing                                                                    
+Simulation                                                                     
+OP: finished                                                                   
+AC Analysis                                                                    
+0.1% frequency = 102.329299 Hz ( etc = 0.0 sec, ett = 0.0 sec )                
+10.0% frequency = 645.654229 Hz ( etc = 0.0 sec, ett = 0.0 sec )               
+20.0% frequency = 4.073803 kHz ( etc = 0.0 sec, ett = 0.0 sec )                
+30.0% frequency = 25.703958 kHz ( etc = 0.0 sec, ett = 0.0 sec )               
+40.0% frequency = 162.181010 kHz ( etc = 0.0 sec, ett = 0.0 sec )              
+50.0% frequency = 1.023293 MHz ( etc = 0.0 sec, ett = 0.0 sec )                
+60.0% frequency = 6.456542 MHz ( etc = 0.0 sec, ett = 0.0 sec )                
+70.0% frequency = 40.738028 MHz ( etc = 0.0 sec, ett = 0.0 sec )               
+80.0% frequency = 257.039578 MHz ( etc = 0.0 sec, ett = 0.0 sec )              
+90.0% frequency = 1.621810 GHz ( etc = 0.0 sec, ett = 0.0 sec )                
+100.0% frequency = 10.000000 GHz ( etc = 0.0 sec, ett = 0.0 sec )              
+finished AC analysis (0.02 sec)                                                
+10.0% time = 10.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=9 evl=8 rej=0 mem=0 cpu=0 wall=0 )                                       
+20.0% time = 20.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=9 evl=8 rej=0 mem=0 cpu=0 wall=0 )                                       
+30.0% time = 30.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )                                      
+40.0% time = 40.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )                                      
+50.0% time = 50.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )                                      
+60.0% time = 60.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )                                      
+70.0% time = 70.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )                                      
+80.0% time = 80.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )                                      
+90.0% time = 90.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                          
+( slv=11 evl=10 rej=0 mem=0 cpu=0 wall=0 )                                     
+100.0% time = 100.0 ns ( etc = 0.0 sec, ett = 0.0 sec )                        
+( slv=11 evl=10 rej=0 mem=0 cpu=0 wall=0 )                                     
+                                                                               
+                                                                               
+See "../sim/amp/2/amp.lis" for results and statistics.                         

@@ -1,0 +1,30 @@
+* "simulator" "HSPICERF"
+* "version" "A-2008.03"
+* "format" "HSP"
+* "rundate" "02:09:25  04/15/2020"
+* "netlist" "../sim/bts/1/bts.sp"
+* "runtitle" "**aaaa"
+* time = 0
+* temperature = 25
+* alter = 0
+*** BEGIN: Saved Operating Point ***
+.nodeset
++ 0 = 0
++ eng = 0.600832
++ 1 = 1.2
++ 2 = 0.859153
++ 3 = 0.883697
++ 4 = 0.600832
++ 5 = 0.223358
++ 6 = 0.423893
++ 7 = 0.155489
++ 8 = 0.552061
++ 9 = 0.600832
++ 10 = 0.6
++ 11 = 0.223358
++ 12 = 0.21628
++ 13 = 0
++ 14 = 0.274702
++ 15 = 0.277384
++ 1000 = 1.54048e-009
+*** END: Saved Operating Point ***

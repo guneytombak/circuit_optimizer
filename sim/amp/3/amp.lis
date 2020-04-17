@@ -1,0 +1,289 @@
+************************************************************************
+HSPICE RF -- A-2008.03 (Feb 26 2008)
+Copyright (C) 2008 Synopsys,Inc. All rights reserved.
+This software and the associated documentation are confidential and
+proprietary to Synopsys, Inc. Your use or disclosure of this software
+is subject to the terms and conditions of a written license agreement
+between you, or your company, and Synopsys, Inc.
+************************************************************************
+
+hspicerf 32-bit version A-2008.03 (Feb 26 2008 14:57:57)
+
+machine info: Professional Server 4.0 (Build 9200) 586 on DESKTOP-BLC9J0L
+
+current time: 19:10:05 04/15/2020
+
+command line: hspicerf ../sim/amp/3/amp.sp -o ../sim/amp/3/amp
+
+Total number of lines parsed: 364
+
+Resource Usage for Parsing
+--------------------------
+| CPU Time    | 0.01 sec |
+| Peak Memory | 0.03 Mb  |
+|------------------------|
+
+Source Files
+-------------------------
+| "../sim/amp/3/amp.sp" |
+| "param.cir"           |
+| "130nm.txt"           |
+|-----------------------|
+
+Options
+------------------
+| Option | Value |
+|--------+-------|
+| FAST   | on    |
+| POST   | 1     |
+|----------------|
+
+Warning: (../sim/amp/3/amp.sp : 16) capacitor "CX" has too big value C=1000,
+this may cause instability or singularity in simulation, please verify your
+netlist
+
+13 unique instance models are loaded.
+
+Resource Usage for Load Netlist Data
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+Netlist Statistics
+---------------------
+| Type      | Count |
+|-----------+-------|
+| nmos      | 2     |
+| pmos      | 4     |
+| resistor  | 1     |
+| capacitor | 2     |
+| isrc      | 1     |
+| vsrc      | 4     |
+| vcvs      | 1     |
+| inductor  | 1     |
+|-------------------|
+
+Summary of Possible Problems in Netlist
+-------------------------------------
+| Negative resistor             | 0 |
+| Negative capacitor            | 0 |
+| Negative inductor             | 0 |
+| Unconnected node              | 0 |
+| Dangling terminal             | 0 |
+| Non-rail bulk terminal        | 0 |
+| Floating MOS gate             | 0 |
+| Floating MOS bulk             | 0 |
+| Floating BJT substrate        | 0 |
+| Floating controlled input     | 0 |
+| Floating current source nodes | 0 |
+| Source loop                   | 0 |
+|-----------------------------------|
+
+Resource Usage for Netlist Check
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+Number of nodes: 17
+
+Total number of nodes (including internal nodes): 17
+
+Resource Usage for Netlist Data Compression
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+Simulation
+
+Operating Point Status time=0
+-----------------------
+| Node | Voltage      |
+|------+--------------|
+| ENG  | 0.597387     |
+| 1    | 1.2          |
+| 2    | 0.701993     |
+| 3    | 0.97957      |
+| 4    | 0.6          |
+| 5    | 0.597387     |
+| 6    | 0.453873     |
+| 7    | 0.597387     |
+| 8    | 0            |
+| 1000 | 1.81091e-010 |
+|---------------------|
+
+
+-----------------------------------------------------------------------
+| Element | VSS          | VX           | VIN          | VDD          |
+|---------+--------------+--------------+--------------+--------------|
+| volts   | 0.0000e+000  | 1.8109e-010  | 6.0000e-001  | 1.2000e+000  |
+| current | -5.5182e-004 | -1.8109e-013 | 2.3344e-015  | -5.5182e-004 |
+| power   | 0.0000e+000  | 3.2794e-023  | -1.4007e-015 | 6.6218e-004  |
+|---------------------------------------------------------------------|
+
+
+--------------------------------------------------------------------------
+| Element    | M5           | M2           | M6           | M3           |
+|------------+--------------+--------------+--------------+--------------|
+| Model Name | NFET         | PFET         | NFET         | PFET         |
+| region     | Saturation   | Cutoff       | Saturation   | Cutoff       |
+| id         | 1.3297e-004  | -1.3559e-004 | 1.3559e-004  | -2.8325e-004 |
+| ibs        | 0.0000e+000  | -0.0000e+000 | 0.0000e+000  | -0.0000e+000 |
+| ibd        | -2.7407e-016 | 1.8503e-016  | -2.7407e-016 | 1.4067e-016  |
+| vgs        | 4.5387e-001  | -3.8218e-001 | 4.5387e-001  | -4.9801e-001 |
+| vds        | 4.5387e-001  | -3.8218e-001 | 5.9739e-001  | -4.9801e-001 |
+| vbs        | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  | 0.0000e+000  |
+| vth        | 2.4149e-001  | -2.7536e-001 | 2.4149e-001  | -2.7189e-001 |
+| vdsat      | 2.1323e-001  | -1.2211e-001 | 2.1323e-001  | -2.1326e-001 |
+| beta       | 5.7605e-003  | 2.0394e-002  | 5.7605e-003  | 1.1710e-002  |
+| gam eff    | 4.1064e-001  | 4.6566e-001  | 4.1064e-001  | 4.6475e-001  |
+| gm         | 1.0568e-003  | 1.8929e-003  | 1.0754e-003  | 2.2111e-003  |
+| gds        | 1.9276e-005  | 1.6992e-005  | 1.7646e-005  | 2.2624e-005  |
+| gmb        | 1.4144e-004  | 3.8922e-004  | 1.4372e-004  | 4.6805e-004  |
+| cdtot      | 1.5320e-014  | 1.0172e-013  | 1.4530e-014  | 8.0859e-014  |
+| cgtot      | 1.0926e-013  | 3.3068e-013  | 1.0910e-013  | 3.3366e-013  |
+| cstot      | 1.1596e-013  | 3.7944e-013  | 1.1600e-013  | 3.7822e-013  |
+| cbtot      | 4.3492e-014  | 2.2394e-013  | 4.2978e-014  | 1.9106e-013  |
+| cgs        | 9.9196e-014  | 2.8525e-013  | 9.9152e-014  | 3.0241e-013  |
+| cgd        | 3.7756e-015  | 2.7501e-014  | 3.6475e-015  | 2.0928e-014  |
+|------------------------------------------------------------------------|
+
+
+--------------------------------------------
+| Element    | M1           | M4           |
+|------------+--------------+--------------|
+| Model Name | PFET         | PFET         |
+| region     | Cutoff       | Linear       |
+| id         | -1.3297e-004 | -2.6857e-004 |
+| ibs        | -0.0000e+000 | -0.0000e+000 |
+| ibd        | 1.8503e-016  | 1.4064e-016  |
+| vgs        | -3.7957e-001 | -4.9801e-001 |
+| vds        | -5.2570e-001 | -2.2043e-001 |
+| vbs        | 0.0000e+000  | 0.0000e+000  |
+| vth        | -2.7513e-001 | -2.7204e-001 |
+| vdsat      | -1.2041e-001 | -2.1314e-001 |
+| beta       | 2.0417e-002  | 1.1709e-002  |
+| gam eff    | 4.6566e-001  | 4.6475e-001  |
+| gm         | 1.8795e-003  | 1.9748e-003  |
+| gds        | 1.5479e-005  | 2.1297e-004  |
+| gmb        | 3.8661e-004  | 4.2219e-004  |
+| cdtot      | 9.7747e-014  | 9.8609e-014  |
+| cgtot      | 3.2922e-013  | 3.3701e-013  |
+| cstot      | 3.7818e-013  | 3.7833e-013  |
+| cbtot      | 2.2030e-013  | 1.9812e-013  |
+| cgs        | 2.8357e-013  | 3.0222e-013  |
+| cgd        | 2.7390e-014  | 2.5054e-014  |
+|------------------------------------------|
+
+
+-------------------------
+| Element | RX          |
+|---------+-------------|
+| r value | 1.0000e+003 |
+| v drop  | 1.8109e-010 |
+| current | 1.8109e-013 |
+| power   | 3.2794e-023 |
+|-----------------------|
+
+Resource Usage for Operating Point
+--------------------------
+| CPU Time    | 0.00 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+AC Analysis
+
+0.1% frequency = 102.329299 Hz ( etc = 0.0 sec, ett = 0.0 sec )
+
+10.0% frequency = 645.654229 Hz ( etc = 0.0 sec, ett = 0.0 sec )
+
+20.0% frequency = 4.073803 kHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+30.0% frequency = 25.703958 kHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+40.0% frequency = 162.181010 kHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+50.0% frequency = 1.023293 MHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+60.0% frequency = 6.456542 MHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+70.0% frequency = 40.738028 MHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+80.0% frequency = 257.039578 MHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+90.0% frequency = 1.621810 GHz ( etc = 0.0 sec, ett = 0.0 sec )
+
+
+
+100.0% frequency = 10.000000 GHz ( etc = 0.0 sec, ett = 0.0 sec )
+******
+***
+****** ac analysis temp= 25
+******
+bw= 4.131071e+008 when/at=4.131e+008
+gain= 3.469912e+001 from= 1.000e+002 to= 1.000e+010
+himg= -9.409918e-001 when/at=4.131e+008
+hreal= -3.384126e-001 when/at=4.131e+008
+tmp= 3.169912e+001 from= 1.000e+002 to= 1.000e+010
+
+
+
+finished AC analysis (0.03 sec)
+
+
+
+AC analysis time = 0.03 cpu sec
+
+Transient Analysis
+10.0% time = 10.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=9 evl=8 rej=0 mem=0 cpu=0 wall=0 )
+20.0% time = 20.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=9 evl=8 rej=0 mem=0 cpu=0 wall=0 )
+30.0% time = 30.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )
+40.0% time = 40.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )
+50.0% time = 50.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )
+60.0% time = 60.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )
+70.0% time = 70.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )
+80.0% time = 80.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=10 evl=9 rej=0 mem=0 cpu=0 wall=0 )
+90.0% time = 90.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=11 evl=10 rej=0 mem=0 cpu=0 wall=0 )
+100.0% time = 100.0 ns ( etc = 0.0 sec, ett = 0.0 sec )
+( slv=11 evl=10 rej=0 mem=0 cpu=0 wall=0 )
+
+solve = 11 eval = 10 reject = 0
+******
+***
+****** transient analysis temp= 25
+******
+zpower= 4.633407e-004 from= 0.000e+000 to= 1.000e-007
+zsarea= 1.810909e-010 from= 0.000e+000 to= 1.000e-007
+
+
+
+Transient time = 0.005 cpu sec, 0 wall sec
+
+Resource Usage for Transient Analysis
+--------------------------
+| CPU Time    | 0.03 sec |
+| Peak Memory | 0.00 Mb  |
+|------------------------|
+
+--- hspicerf done [../sim/amp/3/amp.sp] ---
+
+Total time = 0.07 cpu sec
+
+Total memory = 0.00 Mbytes
+
+
+
+
+
+See "../sim/amp/3/amp.lis" for results and statistics.
