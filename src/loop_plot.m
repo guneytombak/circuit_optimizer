@@ -3,7 +3,7 @@ set(gcf, 'Units', 'Normalized', 'OuterPosition', [0.2 0.2 0.6 0.6]);
 
 scatter3(wY(:,1),wY(:,2),wY(:,3),'xr');
 hold on;
-scatter3(Y(:,1),Y(:,2),Y(:,3),'og');
+scatter3(sY(:,1),sY(:,2),sY(:,3),'og');
 s = scatter3(rY(:,1),rY(:,2),rY(:,3),'.b');
 view(85,27);
 title(['Real Parameters Gen: ' num2str(gen)]);

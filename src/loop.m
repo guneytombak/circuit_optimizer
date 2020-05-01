@@ -58,16 +58,19 @@ while gen < noGen
     
     [sel, hete, Znew, nsgaData] = selection(Y, Z, specs);
     
-    X = X(sel,:);
-    Y = Y(sel,:);
-    U = U(sel,:);
+    sX = X(sel,:);
+    sY = Y(sel,:);
+    sU = U(sel,:);
    
     loop_plot;
 
     %% Matingpool
 
-    fr = nsgaData.frontLabel;
-    matSel = mating(fr, hete, specs.popSize);
+    [n,~] = size(X);
+    matSel = randperm(n);
+    
+    %fr = nsgaData.frontLabel;
+    %matSel = mating(fr, hete, specs.popSize);
 
     %% Crossover and Mutation with Boundary Elimination
     
@@ -76,23 +79,23 @@ while gen < noGen
     %% Archiving
     
     if gen ~= 0
-        arch.X(gen,:,:) = X;
-        arch.Y(gen,:,:) = Y;
-        arch.U(gen,:,:) = U;
+        arch.X(gen,:,:) = sX;
+        arch.Y(gen,:,:) = sY;
+        arch.U(gen,:,:) = sU;
         arch.Z{gen} = Z;
         arch.nsgaData{gen} = nsgaData;
         arch.outOfRange(gen,:) = outOfRange;
     else
-        arch.ini.X = X;
-        arch.ini.Y = Y;
-        arch.ini.U = U;
+        arch.ini.X = sX;
+        arch.ini.Y = sY;
+        arch.ini.U = sU;
         arch.ini.Z = Z;
         arch.ini.nsgaData = nsgaData;
         arch.ini.outOfRange = outOfRange;
     end
 
     %% Last X and Z for Load
-    continuum.X = [offSpX; X];
+    continuum.X = [offSpX; sX];
     continuum.Z = Z;
     
     %% Duration Estimation
