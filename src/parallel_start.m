@@ -23,7 +23,7 @@ if pll.flag
         parpool('local',pll.numWorkers);
     end
     pll.status = gcp;
-    pll.numWorkers = current_pll.NumWorkers; 
+    pll.numWorkers = pll.status.NumWorkers; 
 end
 
 %% Selection of Simulator
