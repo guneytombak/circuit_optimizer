@@ -1,12 +1,13 @@
-function [offSp, outOfRange] = crossMutation(matSel, X, lims, param)
+function [offSp, outOfRange] = crossMutation(matSel, X, lims, specs)
 
 %% Parameters
 
-mSS = param.mssMuSig;
-recCoef = param.recCoef;
+mSS = specs.mssMuSig;
+recCoef = specs.recCoef;
 loB = lims.xLo;
 upB = lims.xUp;
-[N,p] = size(X);
+N = specs.popSize;
+p = specs.noXYU(1);
 
 %% Initialize Offspring
 offSp = zeros(N, p);
