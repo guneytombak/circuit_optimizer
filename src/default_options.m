@@ -1,0 +1,1 @@
+specs.au_flag = ~isempty(specs.aup.file_name);

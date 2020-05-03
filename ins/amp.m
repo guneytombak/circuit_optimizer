@@ -63,3 +63,5 @@ specs.highY = [1 1 0];
 specs.iniPopMult = 5; 
 
 specs.lims = lims;
+
+specs.aup.file_name = '';

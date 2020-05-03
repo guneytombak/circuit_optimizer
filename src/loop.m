@@ -55,7 +55,7 @@ while gen < noGen
     end
     
     %% Selection
-    
+        
     [sel, hete, Znew, nsgaData] = selection(Y, Z, specs);
     
     sX = X(sel,:);
@@ -65,8 +65,14 @@ while gen < noGen
     loop_plot;
 
     %% Matingpool
-
-    [n,~] = size(X);
+    
+    if specs.au_flag
+        Xwau = [X; specs.aup.X];
+    else
+        Xwau = X;
+    end
+    
+    [n,~] = size(Xwau);
     matSel = randperm(n);
     
     %fr = nsgaData.frontLabel;
@@ -74,7 +80,7 @@ while gen < noGen
 
     %% Crossover and Mutation with Boundary Elimination
     
-    [offSpX, outOfRange] = crossMutation(matSel, X, lims, specs);
+    [offSpX, outOfRange] = crossMutation(matSel, Xwau, lims, specs);
     
     %% Archiving
     

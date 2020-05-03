@@ -58,11 +58,18 @@ rUp = (~specs.highY).*lims.yUp - specs.highY.*lims.yLo;
 nanLo = isnan(rLo); 
 nanUp = isnan(rUp);
 
-rLo(nanLo)=0;
-rUp(nanUp)=0;
+rLo(nanLo) = 0;
+rUp(nanUp) = 0;
 
-sLo = nanLo.*min(S) + (~nanLo).*rLo;
-sUp = nanUp.*max(S) + (~nanUp).*rUp;
+if specs.au_flag
+    au_R = (~specs.highY).*specs.aup.Y - specs.highY.*specs.aup.Y;
+    Swau = [S; au_R];
+else
+    Swau = S;
+end
+
+sLo = nanLo.*min(Swau) + (~nanLo).*rLo;
+sUp = nanUp.*max(Swau) + (~nanUp).*rUp;
 sRa = sUp - sLo;
 
 %Sn = (S - sLo)./sRa;
