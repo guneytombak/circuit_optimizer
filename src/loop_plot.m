@@ -6,7 +6,7 @@ scatter3(wY(:,1),wY(:,2),wY(:,3),'xr');
 hold on;
 scatter3(sY(:,1),sY(:,2),sY(:,3),'og');
 s = scatter3(rY(:,1),rY(:,2),rY(:,3),'.b');
-if au_flag
+if specs.au_flag
     auY = specs.aup.Y;
     scatter3(auY(:,1),auY(:,2),auY(:,3),'dm');
     legend_cell = [legend_cell, 'Golden'];
@@ -25,12 +25,12 @@ if dataTipFlag
         s.DataTipTemplate.DataTipRows(k).Label = naming.output(k);
     end    
     for k = 1:specs.noXYU(3)
-        row = dataTipTextRow(naming.unused(k),gU(n,:,k));
-        s.DataTipTemplate.DataTipRows(noXYU(2)+k) = row;
+        row = dataTipTextRow(naming.unused(k),rU(:,k));
+        s.DataTipTemplate.DataTipRows(specs.noXYU(2)+k) = row;
     end
     for k = 1:specs.noXYU(1)
-        row = dataTipTextRow(naming.input(k),gX(n,:,k));
-        s.DataTipTemplate.DataTipRows(noXYU(2)+noXYU(3)+k) = row;
+        row = dataTipTextRow(naming.input(k),rX(:,k));
+        s.DataTipTemplate.DataTipRows(specs.noXYU(2)+specs.noXYU(3)+k)=row;
     end
 
 end

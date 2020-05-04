@@ -11,9 +11,9 @@ while gen < noGen
     else
         [offSpY, offSpU] = simu(offSpX, ckt);
             
-        rX = [offSpX; X];
-        rY = [offSpY; Y];
-        rU = [offSpU; U];
+        rX = [offSpX; sX];
+        rY = [offSpY; sY];
+        rU = [offSpU; sU];
     end
     
     %% Duration Estimation
