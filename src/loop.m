@@ -51,7 +51,7 @@ while gen < noGen
         arch.ini.rX = rX;
         arch.ini.rY = rY;
         arch.ini.rU = rU;
-        arch.ini.err = eli;
+        arch.ini.eli = eli;
     end
     
     %% Selection
