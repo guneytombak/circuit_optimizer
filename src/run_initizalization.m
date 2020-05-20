@@ -5,6 +5,9 @@ if isempty(load_name)
     if specs.au_flag
         au_protocol;
     end
+    if specs.sl_flag
+        sl_protocol;
+    end
 else
     preGen = preData.noGen;
     iniX = preData.continuum.X;

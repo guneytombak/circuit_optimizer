@@ -16,6 +16,18 @@ while gen < noGen
         rU = [offSpU; sU];
     end
     
+    %% Silver Point Addition
+    
+    if gen == 0 && specs.sl_flag == 1
+        
+        slp = specs.slp;
+        
+        rX = [slp.X; rX];
+        rY = [slp.Y; rY];
+        rU = [slp.U; rU];
+    
+    end
+    
     %% Duration Estimation
     
     if gen == (preGen + 1)

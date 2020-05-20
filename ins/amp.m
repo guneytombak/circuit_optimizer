@@ -39,8 +39,8 @@ L = ckt.dL; W = ckt.dW;
 
 lims.xLo = [L L L W W W 50e-6];  
 lims.xUp = [10*L 10*L 10*L 150*W 150*W 150*W 1e-3]; 
-lims.yLo = [20 6 0];
-lims.yUp = [40 10 20e-3];
+lims.yLo = [NaN NaN NaN];
+lims.yUp = [NaN NaN NaN];
 lims.uLo = [45 NaN];
 lims.uUp = [NaN NaN];
 
@@ -60,8 +60,9 @@ specs.noXYU = [noX noY noU];
 specs.recCoef = 0.8;
 specs.mssMuSig = [0.1 0.2];
 specs.highY = [1 1 0];
-specs.iniPopMult = 5; 
+specs.iniPopMult = 2; 
 
 specs.lims = lims;
 
 specs.aup.file_name = '';
+specs.slp.file_name = 'slp_amp_200520_20-22.mat';
