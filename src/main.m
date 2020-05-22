@@ -2,16 +2,21 @@ close all;
 clear all;
 format long;
 
+%% Figure Parameters
+
 pause_duration = 1e-5;
-numClose = 20;
+act_fig_no = 10;
+AZ = -60; EL = 45;
+fig_pos_vec = [0.3 0.2 0.4 0.65];
+fig_flag = 1;
 
 set(0,'defaulttextInterpreter','latex');
 
 %% File/Load Name
 
-file_name = 'amp';
-N = 1000; if mod(N,2), N = N + 1; end
-noGen = 200; 
+file_name = 'amp_ex';
+N = 30; if mod(N,2), N = N + 1; end
+noGen = 20; 
 
 load_name = '';
 addGen = 100;

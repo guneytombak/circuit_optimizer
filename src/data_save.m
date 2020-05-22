@@ -23,6 +23,14 @@ data.ckt = ckt;
 ymdStr = num2str(yyyymmdd(data.run_date));
 [h,mi,s] = hms(data.run_date);
 
-saveText = [ckt.name '_' ymdStr(3:end) '_' num2str(h) '-' num2str(mi)];
+save_text = [naming.file_name ...
+            '_' ymdStr(3:end) '_' num2str(h) '-' num2str(mi)];
 
-save(['../res/' saveText '.mat'], 'data');
+data.naming.save_text = save_text;
+
+save_dir = ['../res/' ckt.name];
+if ~exist(save_dir, 'dir')
+   mkdir(save_dir);
+end
+
+save([save_dir  '/' save_text '.mat'], 'data');
